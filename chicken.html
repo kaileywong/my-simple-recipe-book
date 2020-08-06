@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chicken Recipes</title>
+    <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class=" dropdown ">
+            <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="chicken.html">chicken</a>
+                <a href="pork.html">pork</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="salmon.html">salmon</a>
+                <a href="fish.html">other</a>
+            </div>
+        </div>
+        <a href='veggies.html'>vegetables</a>
+        <a href='misc.html'>misc.</a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
+        </div>
+        <h1>Chicken Recipes</h1>
+    </nav>
+    <div class="buttonbar">
+        <!-- 
+        <button class="downloadbtn"><i class="fa fa-download"></i> Download</button> -->
+        <button id="print" class="printbtn" onclick="print()"><i class="fas fa-print"></i> Print
+
+            </button>
+
+    </div>
+    <div class="wrapper active-element">
+        <main class="main-contents ">
+            <br>
+            <div class="tab">
+                <button class="tablinks" onclick="openRecipe(event, '5spicethigh')">Five Spice Chicken Thighs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'chilithigh')">Chili Chicken Thighs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'garlicgingerdrums')">Garlic Ginger Drumsticks</button>
+                <button class="tablinks" onclick="openRecipe(event, 'bakedasiandrums')">Baked Asian Drumsticks</button>
+                <button class="tablinks" onclick="openRecipe(event, 'vietthigh')">Vietnamese Chicken Thighs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'pokpokwings')">Pok Pok Vietnamese Chicken Wings</button>
+                <button class="tablinks" onclick="openRecipe(event, 'paprikash')">Chicken Paprikash</button>
+                <button class="tablinks" onclick="openRecipe(event, 'honeysoydrums')">Honey Soy Drumsticks</button>
+
+            </div>
+            <div style="display: none" id="5spicethigh" class="tabcontent">
+                <h2>Five Spice Chicken Thighs</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>8 chicken thighs, boneless and skinless</li>
+                    <li>2 tablespoons soy sauce</li>
+                    <li>2 teaspoons Shaoxing wine</li>
+                    <li>3 tablespoons brown sugar</li>
+                    <li>2 teaspoons five-spice powder</li>
+                    <li>2 tablespoons red onion, minced</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>1 teaspoon vegetable oil</li>
+                    <li>1 teaspoon sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the chicken to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the chicken in a pan and bake for 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="chilithigh" class="tabcontent">
+                <h2>Chili Chicken Thighs </h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>8 chicken thighs, boneless and skinless</li>
+                    <li>&frac13; cup soy sauce</li>
+                    <li>&frac12; cup rice vinegar</li>
+                    <li>6 tablespoons honey</li>
+                    <li>3 tablespoons chili garlic sauce</li>
+                    <li>6 cloves garlic, minced</li>
+                    <li>&frac14; cup sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the chicken to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the chicken in a pan and bake for 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="garlicgingerdrums" class="tabcontent">
+                <h2>Garlic Ginger Chicken Drumsticks</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>10 chicken drumsticks</li>
+                    <li>&frac14; cup soy sauce</li>
+                    <li>6 tablespoons brown sugar</li>
+                    <li>1 tablespoon ginger, shredded</li>
+                    <li>8 cloves garlic, minced</li>
+                    <li>&frac14; cup sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the drumsticks to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the drumsticks in a pan and bake for 20 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="bakedasiandrums" class="tabcontent">
+                <h2>Baked Asian Chicken Drumsticks</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>10 chicken drumsticks</li>
+                    <li>&frac14; cup soy sauce</li>
+                    <li>3 tablespoons fish sauce</li>
+                    <li>3 tablespoons rice wine vinegar</li>
+                    <li>&frac14; cup brown sugar</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>1 tablespoon ginger, shredded</li>
+                    <li>juice of 1&frac12; lemons</li>
+                    <li>2 tablespoons sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the drumsticks to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the drumsticks in a pan and bake for 20 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="vietthigh" class="tabcontent">
+                <h2>Vietnamese Chicken Thighs </h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 pounds chicken thighs, boneless and skinless</li>
+                    <li>&frac14; cup soy sauce</li>
+                    <li>&frac14; cup fish sauce</li>
+                    <li>&frac12; cup brown sugar</li>
+                    <li>1 tablespoon ginger, minced</li>
+                    <li>juice and zest of &frac12; lime</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>2 tablespoons vegetable oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the chicken to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the chicken in a pan and bake for 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="pokpokwings" class="tabcontent">
+                <h2>Pok Pok Vietnamese Chicken Wings </h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>3 pounds chicken wings</li>
+                    <li>&frac12; cup fish sauce</li>
+                    <li>&frac34; cup brown sugar</li>
+                    <li>4 cloves garlic, minced</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the chicken wings to marinate in the fridge for 3 hours or longer.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the chicken in a pan and bake for 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="paprikash" class="tabcontent">
+                <h2>Chicken Paprikash</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1&frac12; pounds chicken thighs/drumsticks</li>
+                    <li>&frac12; teaspoon salt</li>
+                    <li>&frac14; teaspoon ground black pepper</li>
+                    <li>2 tablespoon vegetable oil</li>
+                    <li>1 medium onion, slicked thinly</li>
+                    <li>&frac14; cup paprika</li>
+                    <li>1 cup low sodium chicken stock</li>
+                    <li>&frac12; cup sour cream</li>
+                    <li>1&frac12; teaspoons cornstarch</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Sprinkle salt and pepper onto the chicken.</li>
+                    <li>Put oil in a pan and brown the drumsticks, 2 batches at a time, 5-7 minutes each time. Be sure to flip and brown both sides of the chicken. When done, leave the drumsticks on a plate to cool.</li>
+                    <li>Add onions to the pan and stir fry a little, then cover and steam for 10 minutes.</li>
+                    <li>Add paprika and fry, stirring constantly, until the paprika is very fragrant, for about 30 seconds.</li>
+                    <li>Add chicken stock and salt, then bring the drumsticks back to the pot.</li>
+                    <li>Bring the pot to a boil and cover the lid. Turn down the heat to a gentle simmer and cook for about an hour, until the chicken falls off the bone.</li>
+                    <li>While the chicken is cooking, whisk sour cream and cornstarch together. </li>
+                    <li>When the chicken is done, temper the sour cream by transferring some cooking liquid from the chicken a spoonful at a time to the cream mixture, stirring after each addition. Once the sour cream is tempered, pour it all back into the
+                        pot and stir to combine.</li>
+                </ol>
+                *Note: Do not let the pot boil once you have added the sour cream. The paprikash is done when the sauce has thickened.
+            </div>
+            <div style="display: none" id="honeysoydrums" class="tabcontent">
+                <h2>Honey Soy Drumsticks</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>8 chicken drumsticks</li>
+                    <li>&frac13; cup soy sauce</li>
+                    <li>&frac13; cup honey</li>
+                    <li>3 tablespoons mirin</li>
+                    <li>1 tablespoon ginger, minced</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>1 teaspoon sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the drumsticks to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the drumsticks in a pan and bake for 20 minutes.</li>
+                </ol>
+            </div>
+        </main>
+        <script src="recipes.js "></script>
+        <br>
+        <div class="push "></div>
+    </div>
+    <div class="footer ">
+        <p>created by Kailey Wong</p>
+    </div>
+</body>
+
+
+</html>

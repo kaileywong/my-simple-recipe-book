@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miscellaneous Recipes</title>
+    <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class=" dropdown ">
+            <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="chicken.html">chicken</a>
+                <a href="pork.html">pork</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="salmon.html">salmon</a>
+                <a href="fish.html">other</a>
+            </div>
+        </div>
+        <a href='veggies.html'>vegetables</a>
+        <a href='misc.html'>misc.</a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
+        </div>
+        <h1>Miscellaneous Recipes</h1>
+    </nav>
+    <div class="wrapper active-element">
+        <main class="main-contents ">
+            <br>
+            <div class="tab">
+                <button class="tablinks" onclick="openRecipe(event, 'tomatoegg')">Stir-Fried Tomato and Eggs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'soysauceeggs')">Soy Sauce Eggs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'curryfishballs')">Curry Fish Balls</button>
+
+            </div>
+
+            <div style="display: none" id="tomatoegg" class="tabcontent">
+                <h2>Stir-Fried Tomato and Eggs</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 eggs</li>
+                    <li>1 pound of tomatoes</li>
+                    <li>1 tablespoon rice wine</li>
+                    <li>1 teaspoon cornstarch</li>
+                    <li>1 teaspoon sugar</li>
+                    <li>2 tablespoons ketchup</li>
+                    <li>3 scallions, sliced</li>
+                    <li>1 teaspoons ginger, minced</li>
+                    <li>&frac12; teaspoon sesame oil</li>
+                    <li>4 tablespoons vegetable oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>In a mixing bowl, beat the eggs, sesame oil, and rice wine. In a small bowl, stir together the cornstarch with 2 tablespoons water until well combined, then stir in the sugar and ketchup.</li>
+                    <li>Heat a wide nonstick skillet over high heat with 3 tablespoons vegetable oil. When the oil simmers, add the scallions. Cook for around 20 seconds. Add the eggs, and cook, stirring well with chopsticks, until just set but still runny,
+                        about 45 seconds. Pour the eggs back into the mixing bowl and wipe out the pan.</li>
+                    <li>Reheat the pan over high heat with 1 tablespoon vegetable oil. When it is hot, add the ginger and cook for about 15 seconds. Add the tomatoes and cook, stirring occasionally, until the flesh has softened but still has some shape and
+                        the juices have begun to form a sauce, 2-3 minutes.</li>
+                    <li>Reduce the heat to medium. Give the cornstarch-ketchup mixture a stir in its bowl, then stir it into the pan. Cook, stirring, until the sauce returns to a boil and thickens. Stir the eggs in the bowl to cut up the curds, then return
+                        to the pan. Cook, stirring, for a few seconds to finish cooking the eggs and combine.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="soysauceeggs" class="tabcontent">
+                <h2>Soy Sauce Eggs</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 eggs</li>
+                    <li>&frac34; cup low-sodium soy sauce</li>
+                    <li>2 tablespoons sugar</li>
+                    <li>9 tablespoons hot water</li>
+                    <li>2 tablespoons sherry vinegar</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Boil the eggs in a pot for 15-20 minutes.</li>
+                    <li>While the eggs are boiling, in a large bowl, dissolve the sugar with the hot water, then add the soy sauce and sherry vinegar.</li>
+                    <li>When the eggs are done, place them in an ice bath and wait around 15 minutes before peeling.</li>
+                    <li>After peeling the eggs, marinate them in the solution for 2-6 hours. You can save the solution for subsequent batches.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="curryfishballs" class="tabcontent">
+                <h2>Curry Fish Balls</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 tablespoons mild yellow curry mixed with 4 teaspoons sesame oil to make curry paste</li>
+                    <li>&frac14; onion, diced</li>
+                    <li>3 garlic cloves, minced</li>
+                    <li>2 tablespoons vegetable oil</li>
+                    <li>&frac12; cup chicken broth</li>
+                    <li>4 tablespoons coconut milk</li>
+                    <li>salt and white pepper to taste</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <!-- TODO: add directions -->
+                </ol>
+            </div>
+        </main>
+        <script src="recipes.js"></script>
+        <br>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <p>created by Kailey Wong</p>
+    </div>
+</body>
+
+
+</html>

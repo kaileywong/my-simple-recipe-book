@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegetable Recipes</title>
+    <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class=" dropdown ">
+            <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="chicken.html">chicken</a>
+                <a href="pork.html">pork</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="salmon.html">salmon</a>
+                <a href="fish.html">other</a>
+            </div>
+        </div>
+        <a href='veggies.html'>vegetables</a>
+        <a href='misc.html'>misc.</a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
+        </div>
+        <h1>Vegetable Recipes</h1>
+    </nav>
+    <div class="wrapper active-element">
+        <main class="main-contents ">
+            <br>
+            <div class="tab">
+                <button id="roastcaulitab" class="tablinks" onclick="openRecipe(event, 'roastcauli')">Roasted Cauliflower</button>
+            </div>
+
+            <div style="display: none" id="roastcauli" class="tabcontent">
+                <h2>Roasted Cauliflower</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 head cauliflower, cut into bite-size florets</li>
+                    <li>&frac14; cup olive oil</li>
+                    <li>3 cloves garlic, chopped</li>
+                    <li>2 teaspoons garlic salt</li>
+                    <li>2 teaspoons cayenne</li>
+                    <li>2 tablespoons thyme</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Toss the ingredients together in a bowl or pan.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Roast the cauliflower in a pan for about 15 minutes, or until golden and soft.</li>
+                </ol>
+            </div>
+        </main>
+        <script src="recipes.js "></script>
+        <br>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <p>created by Kailey Wong</p>
+    </div>
+</body>
+
+
+</html>

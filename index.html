@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!-- TODO: add print/download buttons; next/previous buttons for recipes -->
+
+<head>
+    <title>A Simple Recipe Book</title>
+    <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class=" dropdown ">
+            <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="chicken.html">chicken</a>
+                <a href="pork.html">pork</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <!-- <a href="fish.html">fish</a> -->
+            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="salmon.html">salmon</a>
+                <a href="fish.html">other</a>
+            </div>
+        </div>
+        <a href='veggies.html'>vegetables</a>
+        <a href='misc.html'>misc.</a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
+        </div>
+        <h1>A Simple Recipe Book</h1>
+    </nav>
+    <div class="wrapper active-element ">
+
+        <main class="main-contents ">
+            <h1 id="about ">About</h1>
+            <p id="description ">This is a compilation of easy-to-follow recipes that is useful for anyone seeking to make a simple meal.</p>
+            <h1 id="about ">Explore</h1>
+
+            <!-- TODO: Complete gallery -->
+            <!-- <div class="slideshowContainer">
+                <!-- Full-width images with number text -->
+            <div class="slides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/roastedcauliflower.JPG" style="width:100%">
+            </div>
+
+            <!-- <div class="slides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%">
+                </div>
+
+                <div class="slides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%">
+                </div> -->
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/roastedcauliflower.JPG" style="width:100%" onclick="currentSlide(1)" alt="Roasted Cauliflower">
+                </div>
+                <!-- <div class="column">
+                    <img class="demo cursor" src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://cafedelites.com/wp-content/uploads/2019/01/Cauliflower-Soup-RECIPE-IMAGE-1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div> -->
+            </div>
+    </div> -->
+
+    </main>
+    <script src="recipes.js "></script>
+    <br>
+    <div class="push "></div>
+    </div>
+    <div class="footer ">
+        <p>created by Kailey Wong</p>
+    </div>
+</body>
+
+</html>

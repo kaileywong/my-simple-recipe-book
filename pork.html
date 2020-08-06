@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pork Recipes</title>
+    <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <div class=" dropdown ">
+            <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="chicken.html">chicken</a>
+                <a href="pork.html">pork</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <div class="dropdown-content ">
+                <a href="salmon.html">salmon</a>
+                <a href="fish.html">other</a>
+            </div>
+        </div>
+        <a href='veggies.html'>vegetables</a>
+        <a href='misc.html'>misc.</a>
+        <div class="searchbar">
+            <input type="text" placeholder="Search...">
+            <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
+        </div>
+        <h1>Pork Recipes</h1>
+    </nav>
+    <div class="wrapper active-element">
+        <main class="main-contents ">
+            <br>
+            <div class="tab">
+                <button class="tablinks" onclick="openRecipe(event, 'bakedchinesevietpork')">Baked Chinese-Vietnamese Pork Chops</button>
+                <button class="tablinks" onclick="openRecipe(event, 'shakebakepork')">Shake and Bake Pork Chops</button>
+                <button class="tablinks" onclick="openRecipe(event, 'asianporktender')">Asian Pork Tenderloins</button>
+                <button class="tablinks" onclick="openRecipe(event, 'asianmarinatedpork')">Asian Marinated Pork Chops</button>
+                <button class="tablinks" onclick="openRecipe(event, 'honeygarlicpork')">Honey Garlic Pork Chops</button>
+                <button class="tablinks" onclick="openRecipe(event, 'ketchuppork')">Ketchup Pork Chops</button>
+                <button class="tablinks" onclick="openRecipe(event, 'thaipork')">Thai Pork Chops</button>
+
+            </div>
+
+            <div style="display: none" id="bakedchinesevietpork" class="tabcontent">
+                <h2>Baked Chinese-Vietnamese Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 thin, center-cut pork chops</li>
+                    <li>2 tablespoons fish sauce</li>
+                    <li>2 tablespoons soy sauce</li>
+                    <li>&frac12; teaspoon Worcestershire sauce</li>
+                    <li>1 teaspoon five-spice powder</li>
+                    <li>5 tablespoons brown sugar</li>
+                    <li>&frac12; teaspoon ginger, minced</li>
+                    <li>1 teaspoon shallot, minced</li>
+                    <li>6 cloves garlic, minced</li>
+                    <li>&frac12; onion, chopped</li>
+                    <li> 3 tablespoons vegetable oil</li>
+                    <li>1 teaspoon sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the pork chops to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the pork chops in a pan and bake for 20 to 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="shakebakepork" class="tabcontent">
+                <h2>Shake and Bake Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>four &frac34;-inch bone-in pork chops</li>
+                    <li>1&frac12; cups panko</li>
+                    <li>5 tablespoons vegetable oil</li>
+                    <li>3 tablespoons grated parmesan</li>
+                    <li>2 teaspoons Italian seasoning</li>
+                    <li>&frac34; teaspoon salt</li>
+                    <li>&frac34; teaspoon pepper</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients excluding the pork chops into a large resealable plastic bag. Coat the pork chops with water. One at a time, place the pork chops in the bag and shake well to coat. Press the mixture firmly into the pork chops.
+                    </li>
+                    <li>Preheat the oven to 375ºF.</li>
+                    <li>Coat a pan with oil or procure a baking sheet on a wire rack. Place the pork chops on the pan or rack and coat them with any remaining breadcrumbs. Bake for about 30 minutes until the breadcrumbs are a dark golden color.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="asianporktender" class="tabcontent">
+                <h2>Asian Pork Tenderloins</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>one 2-pound pork tenderloin, trimmed of fat</li>
+                    <li>&frac13; cup light soy sauce</li>
+                    <li>2 tablespoons Worcestershire sauce</li>
+                    <li>6 tablespoons brown sugar</li>
+                    <li>3 green onions, chopped</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>&frac14; cup sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the pork to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the pork chops in a pan and bake for 20 to 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="asianmarinatedpork" class="tabcontent">
+                <h2>Asian Marinated Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>8 thin, center-cut pork chops</li>
+                    <li>2 tablespoons rice vinegar</li>
+                    <li>2 tablespoons brown sugar</li>
+                    <li>zest and juice of 1 orange</li>
+                    <li>2 tablespoons ginger, minced</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>2 green onions, chopped</li>
+                    <li>2 teaspoons sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the pork chops to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the pork chops in a pan and bake for 20 to 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="honeygarlicpork" class="tabcontent">
+                <h2>Honey Garlic Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 thin, center-cut pork chops</li>
+                    <li>juice of 2 medium-sized lemons</li>
+                    <li>&frac14; cup honey</li>
+                    <li>2 tablespoons soy sauce</li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>2 tablespoons olive or sesame oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the pork chops to marinate in the fridge for as long as possible.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the pork chops in a pan and bake for 20 to 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="ketchuppork" class="tabcontent">
+                <h2>Ketchup Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 thin, center-cut pork chops</li>
+                    <li>1 tablespoon soy sauce</li>
+                    <li>1 tablespoon Worcestershire sauce</li>
+                    <li>juice of &frac12; lemon</li>
+                    <li>2 tablespoons brown sugar</li>
+                    <li>2 tablespoons ketchup</li>
+                    <li>2 tablespoons vegetable oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl then pour over the pork chops in a baking pan.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Bake for 30 minutes.</li>
+                </ol>
+            </div>
+            <div style="display: none" id="thaipork" class="tabcontent">
+                <h2>Thai Pork Chops</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>6 thin, center-cut pork chops</li>
+                    <li>&frac14; cup soy sauce</li>
+                    <li>3 tablespoons brown sugar</li>
+                    <li>juice of 1 lime</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>1 tablespoon vegetable oil</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>Combine all ingredients in a bowl. Allow the pork chops to marinate in the fridge for 30 minutes or more.</li>
+                    <li>Preheat the oven to 350ºF.</li>
+                    <li>Place the pork chops in a pan and bake for 20 to 30 minutes.</li>
+                </ol>
+            </div>
+        </main>
+        <script src="recipes.js "></script>
+        <br>
+        <div class="push "></div>
+    </div>
+    <div class="footer ">
+        <p>created by Kailey Wong</p>
+    </div>
+</body>
+
+
+</html>
