@@ -53,6 +53,12 @@ function responsiveNav() {
     } else {
         nav.className = "navbar";
     }
-    alert("active")
+}
+
+function printRecipe() {
+    document.getElementsByClassName("printbtn")[0].style.display = "none";
+    print();
+    document.getElementsByClassName("printbtn")[0].style.display = "block";
+
 
 }

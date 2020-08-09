@@ -4,13 +4,13 @@
 <head>
     <title>Chicken Recipes</title>
     <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Chilanka&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="recipes.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <div class="navbar">
         <a href="index.html"><i class="fas fa-home"></i></a>
         <div class=" dropdown ">
             <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
+            <button class="dropbtn">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
             <div class="dropdown-content ">
                 <a href="salmon.html">salmon</a>
                 <a href="fish.html">other</a>
@@ -28,17 +28,24 @@
         </div>
         <a href='veggies.html'>vegetables</a>
         <a href='misc.html'>misc.</a>
-        <div class="searchbar">
+        <a href="javascript:void(0);" style="float: right" class="icon" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Search Bar -->
+        <!-- <div class="searchbar">
             <input type="text" placeholder="Search...">
             <button style="font-size: 20px;" type="submit"><i class="fa fa-search fa-xs"></i></button>
-        </div>
-        <h1>Chicken Recipes</h1>
-    </nav>
-    <div class="buttonbar">
-        <!-- 
-        <button class="downloadbtn"><i class="fa fa-download"></i> Download</button> -->
-        <button id="print" class="printbtn" onclick="print()"><i class="fas fa-print"></i> Print
+        </div> -->
 
+        <!-- Title -->
+        <div class="title">
+            Chicken Recipes
+            <i class="fas fa-utensil-spoon"></i>
+        </div>
+    </div>
+    <div class="buttonbar">
+        <button id="print" class="printbtn" onclick="printRecipe()"><i class="fas fa-print"></i> Print
             </button>
 
     </div>
@@ -219,7 +226,7 @@
                 </ol>
             </div>
         </main>
-        <!-- <script src="recipes.js "></script> -->
+        <script src="recipes.js "></script>
         <br>
         <div class="push "></div>
     </div>
