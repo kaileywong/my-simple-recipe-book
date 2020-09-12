@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>Miscellaneous Recipes</title>
+    <title>My Simple Recipe Book - Miscellaneous Recipes</title>
     <script src="https://kit.fontawesome.com/2ac8e23908.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Chilanka&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&&family=Long+Cang&family=Grandstander:wght@300&family=Notable&family=Chilanka&family=Muli:wght@200&family=BenchNine&family=Assistant:wght@300&family=Amatic+SC:wght@700&family=Comfortaa:wght@700&family=Kalam:wght@700&family=Sacramento&family=Baloo+Thambi+2:wght@600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="recipes.css">
 </head>
@@ -12,22 +12,16 @@
 <body>
     <div class="navbar">
         <a href="index.html"><i class="fas fa-home"></i></a>
-        <div class=" dropdown ">
+        <div class=" dropdown">
             <button class="dropbtn ">meat <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
             <div class="dropdown-content ">
                 <a href="chicken.html">chicken</a>
                 <a href="pork.html">pork</a>
             </div>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn ">fish <i style='font-size: 15px' class="fas fa-caret-square-down fa-xs "></i></button>
-            <div class="dropdown-content ">
-                <a href="salmon.html">salmon</a>
-                <a href="fish.html">other</a>
-            </div>
-        </div>
+        <a href="fish.html">fish</a>
         <a href='veggies.html'>vegetables</a>
-        <a href='misc.html'>misc.</a>
+        <a href='misc.html'>other</a>
         <a href="javascript:void(0);" style="float: right" class="icon" onclick="responsiveNav()">
             <i class="fa fa-bars"></i>
         </a>
@@ -40,17 +34,15 @@
 
         <!-- Title -->
         <div class="title">
-            Miscellaneous Recipes
-            <i class="fas fa-utensil-spoon"></i>
+            My Simple Recipe Book
+            <i id="spoon" class="fas fa-utensil-spoon"></i>
         </div>
     </div>
-    <div class="buttonbar">
-        <button id="print" class="printbtn" onclick="printRecipe()"><i class="fas fa-print"></i> Print
-            </button>
-
-    </div>
     <div class="wrapper active-element">
-        <main class="main-contents ">
+        <main class="main-contents">
+            <h1 style="padding: 0 40px 0 40px">Miscellaneous Recipes
+                <button id="print" class="printbtn" onclick="printRecipe()"><i class="fas fa-print"></i> Print
+            </button></h1>
             <br>
             <div class="tab">
                 <button class="tablinks" onclick="openRecipe(event, 'tomatoegg')">Stir-Fried Tomato and Eggs</button>
@@ -137,6 +129,9 @@
             </div>
         </main>
         <script src="recipes.js"></script>
+        <script>
+            openRecipe(event, 'tomatoegg')
+        </script>
         <br>
         <div class="push"></div>
     </div>

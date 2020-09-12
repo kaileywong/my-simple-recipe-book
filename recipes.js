@@ -12,7 +12,6 @@ function openRecipe(event, recipeName) {
     event.currentTarget.className += " active";
 }
 
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,6 +26,7 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides");
+    var recipes = document.getElementsByClassName("carousel-recipe");
     var dots = document.getElementsByClassName("demo");
     var caption = document.getElementById("caption");
     if (n > slides.length) {
@@ -38,11 +38,15 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    for (i = 0; i < recipes.length; i++) {
+        recipes[i].style.display = "none";
+    }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace("active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    recipes[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += "active";
     caption.innerHTML = dots[slideIndex - 1].alt;
 }
 
