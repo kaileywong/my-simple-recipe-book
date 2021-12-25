@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Lato&family=Manrope:wght@800&family=Montserrat:wght@300;600&family=Oooh+Baby&family=Poppins:wght@400;600&display=swap');
+
+
 * {
     margin: 0;
     box-sizing: border-box
@@ -41,10 +44,12 @@
 }
 
 .navbar {
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
     letter-spacing: 3px;
     background-color: black;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 .navbar button,
@@ -54,6 +59,7 @@
 .dropdown:hover .dropbtn {
     color: white;
     text-shadow: 1px 1px rgb(210, 187, 255);
+    letter-spacing: inherit;
 }
 
 .navbar a {
@@ -64,6 +70,7 @@
     text-decoration: none;
     font-size: 25px;
 }
+
 
 .active {
     color: white;
@@ -88,8 +95,9 @@
 .main-contents h1 {
     letter-spacing: 1.5px;
     margin-bottom: .6rem;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat';
     text-align: left;
+    text-transform: uppercase;
 }
 
 .main-contents p {
@@ -104,25 +112,32 @@ body {
     height: 100%;
     padding-bottom: 5px;
     background: linear-gradient(to bottom, #ffffcc 0%, #ffffff 100%);
-    font-family: 'Dancing Script';
+    font-family: 'Montserrat';
 }
 
 #about p {
-    font-family: 'Muli', cursive;
+    font-family: 'Muli', regular;
     text-align: left;
-    color: blue;
+    color: navy;
     font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 2em;
 }
 
-.footer p,
-.push {
+
+
+.footer p {
     height: 20px;
-    font-family: "Kalam", cursive;
+    font-family: "Oooh Baby", cursive;
     text-align: center;
 }
 
+
 .footer {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
 
 .dropdown {
@@ -139,11 +154,12 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .dropdown-content {
     display: none;
-    background-color: rgb(215, 229, 233);
+    background-color: darkblue;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -162,7 +178,7 @@ body {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(215, 229, 233);
+    background-color: purple;
     color: white;
 }
 
@@ -273,7 +289,7 @@ body {
     font-size: 22px;
     padding: 8px 12px;
     position: absolute;
-    font-family: Impact;
+    font-family: 'Lato', sans-serif;
     top: 0;
 }
 
@@ -282,7 +298,7 @@ body {
     background-color: black;
     padding: 2px 16px;
     color: white;
-    font-family: 'Chilanka';
+    font-family: 'Poppins';
 }
 
 .row:after {
