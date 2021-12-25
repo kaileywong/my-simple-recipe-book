@@ -128,8 +128,15 @@ body {
 
 .footer p {
     height: 20px;
-    font-family: "Oooh Baby", cursive;
+    font-family: "Chilanka";
     text-align: center;
+}
+
+.footer a {
+    height: 20px;
+    font-family: "Chilanka";
+    text-align: center;
+    color: white;
 }
 
 
