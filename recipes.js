@@ -63,6 +63,18 @@ function printRecipe() {
     document.getElementsByClassName("printbtn")[0].style.display = "none";
     print();
     document.getElementsByClassName("printbtn")[0].style.display = "block";
-
-
 }
+
+var i = 0;
+var txt = 'Happy Cooking!'; 
+var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("msg").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();

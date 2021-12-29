@@ -247,12 +247,11 @@ body {
 }
 
 .slideshowContainer {
-    /* text-align: center; */
-    /* margin: auto; */
     position: relative;
-    width: 50vw;
+    width: 35%;
     height: auto;
     clear: both;
+    margin: 20px;
 }
 
 .cursor {
@@ -266,7 +265,7 @@ body {
     top: 40%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: 15vw;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -276,11 +275,11 @@ body {
 }
 
 .prev {
-    left: 0;
+    left: 40px;
 }
 
 .next {
-    right: 0;
+    right: 40px;
 }
 
 .prev:hover,
