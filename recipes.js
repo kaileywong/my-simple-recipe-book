@@ -28,7 +28,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("slides");
     var recipes = document.getElementsByClassName("carousel-recipe");
     var dots = document.getElementsByClassName("demo");
-    var caption = document.getElementById("caption");
+    // var caption = document.getElementById("caption");
     if (n > slides.length) {
         slideIndex = 1;
     }
@@ -47,7 +47,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     recipes[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += "active";
-    caption.innerHTML = dots[slideIndex - 1].alt;
+    // caption.innerHTML = dots[slideIndex - 1].alt;
 }
 
 function responsiveNav() {
