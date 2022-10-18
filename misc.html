@@ -49,7 +49,9 @@
             </h1>
             <br>
             <div class="tab">
-                <button class="tablinks" onclick="openRecipe(event, 'tomatoegg')">Stir-Fried Tomato and Eggs</button>
+                <button class="tablinks" onclick="openRecipe(event, 'mushroomudon')">Stir-Fried Mushroom Udon</button>
+                <button class="tablinks" onclick="openRecipe(event, 'tomatoegg')">Stir-Fried Tomato and
+                    Eggs</button>
                 <button class="tablinks" onclick="openRecipe(event, 'beefstew')">Beef Stew with Carrot and
                     Potato</button>
                 <button class="tablinks" onclick="openRecipe(event, 'soysauceeggs')">Soy Sauce Eggs</button>
@@ -59,7 +61,35 @@
                 <button class="tablinks" onclick="openRecipe(event, 'butternutsoup')">Butternut Squash Soup</button>
 
             </div>
-
+            <div style="display: none" id="mushroomudon" class="tabcontent">
+                <h2>Stir-Fried Mushroom Udon</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>16 oz. udon noodles</li>
+                    <li>1 bunch green onions, sliced</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>2 tbsp vegetable oil</li>
+                    <li>8 oz. mushrooms, sliced or separated (depending on what variety)</li>
+                    <li>&frac14; cup soy sauce</li>
+                    <li>1 tsbp fresh ginger, grated</li>
+                    <li>2 tsp sesame oil</li>
+                    <li>1 tbsp rice vinegar</li>
+                    <li>1 tbsp honey</li>
+                    <li>&frac12; tsp chili garlic sauce/sriracha</li>
+                    <li>&frac13; cup water (or chicken or vegetable broth)</li>
+                </ul>
+                <h3>Directions:</h3>
+                <ol>
+                    <li>In a small bowl, combine the soy sauce, ginger, sesame oil, rice vinegar, honey, chili
+                        sauce, and water (or broth) and stir to create the sauce. Feel free to add more chili sauce
+                        according to your desired spice level.</li>
+                    <li>In a pan, sauté the sliced green onion and garlic in oil.</li>
+                    <li>Add the mushrooms to the pan, and saute the mushrooms until fully cooked (soft and slightly
+                        browned).</li>
+                    <li>Add the noodles and sauce to the pan and stir fry until the noodles are broken up and coated in
+                        sauce.</li>
+                </ol>
+            </div>
             <div style="display: none" id="tomatoegg" class="tabcontent">
                 <h2>Stir-Fried Tomato and Eggs</h2>
                 <h3>Ingredients:</h3>
@@ -202,7 +232,7 @@
         </main>
         <script src="recipes.js"></script>
         <script>
-            openRecipe(event, 'tomatoegg')
+            openRecipe(event, 'mushroomudon')
         </script>
         <br>
     </div>
